@@ -2,7 +2,7 @@
 
 This repository contains my script for parsing quickly the many Cloudtrail logs provided in the challenge [Heartbreaker-Denouement by HackTheBox](https://app.hackthebox.com/sherlocks/Heartbreaker-Denouement).
 
-I'm using Elasticsearch and Python for its ease of use.  
+I'm using Elasticsearch and Python for its ease of use. None of this is particularly secure nor stable, it is not meant for production, only for solving the challenge on your PC.
 
 It is made for linux (created on Ubuntu), **it shall not work on Windows**.
 
@@ -56,3 +56,7 @@ It should be looking like :
 2. `$ docker compose up -d`
 3. `$ python3 Heartbreaker-Denouement.py $PWD` 
 4. Go to http://localhost:5601
+
+# Debugging
+
+Feel free to open an issue.
