@@ -16,10 +16,11 @@ It is made for linux (created on Ubuntu), **it shall not work on Windows**.
 
 ### Setup 
 
-1. Choose a working directory such as `/tmp/MySherlockFolder`.
-2. `git clone https://github.com/septdney/htb-sherlock-heartbreaker-denouement.git`. 
-3. `pip install elasticsearch`.
-4. Unzip the file `HeartBreakerDenouement.zip` directly into your working directory, such as now such as `/tmp/MySherlockFolder/htb-sherlock-heartbreaker-denouement`.
+1. Choose a working directory such as `/tmp/MySherlockFolder`
+2. `git clone https://github.com/septdney/htb-sherlock-heartbreaker-denouement.git`
+3. `$ cd htb-sherlock-heartbreaker-denouement`
+4. `pip install elasticsearch`
+5. Unzip the file `HeartBreakerDenouement.zip` directly into your working directory, such as now `/tmp/MySherlockFolder/htb-sherlock-heartbreaker-denouement`
 
 ### Tree
 
@@ -42,8 +43,8 @@ It should be looking like :
     │   │   │           ├── 12
     │   │   │           │   ├── 949622803460_CloudTrail_ap-northeast-.json.gz
     │   │   │           │   └── 949622803460_CloudTrail_ap-northeast-1_20240312T0035Z_A7YnwTNFdiLRloJ0.json.gz
-    │   └── uac-uswebapp00-linux-20240313145552.tar.gz
-        └── [... Many more files and folders ...]
+    │   └── [... Many more files and folders ...]
+        └── uac-uswebapp00-linux-20240313145552.tar.gz   
     ├── Heartbreaker-Denouement.py
     ├── HeartBreakerDenouement.zip
     ├── kibana.yml
