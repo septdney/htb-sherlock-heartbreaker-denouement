@@ -55,7 +55,7 @@ It should be looking like :
 1. `$ cd /tmp/MySherlockFolder/htb-sherlock-heartbreaker-denouement`
 2. `$ docker compose up -d`
 3. `$ python3 Heartbreaker-Denouement.py $PWD` 
-4. Go to http://localhost:5601
+4. Go to http://localhost:5601, create an dataview with the index `heartbreakerdenouement` and you should be good to go.
 
 # Debugging
 
