@@ -28,7 +28,7 @@ print("OK.")
 
 
 print("\nMoving Cloudtrail logs to the logs directory.")
-command = "find " + path_to_folder + r"/HeartBreakerDenouement -type f -name '*.json.gz' -exec mv -i {} " + path_to_folder +  "/logs/  \;"
+command = "find " + path_to_folder +  "/HeartBreakerDenouement -type f -name '*.json.gz' -exec mv -i {} \\"+ path_to_folder +  r"/logs/  \;"
 os.system(command)
 entries = os.listdir(path_to_folder+"/logs")
 file_count = sum(1 for entry in entries if os.path.isfile(os.path.join(path_to_folder+"/logs", entry)))
@@ -58,7 +58,7 @@ except:
     print("Index already exists.")
 print("OK.")
 
-
+i = 0
 print("\nParsing logs and sending them to Elasticsearch, it will take a few minutes, please be patient.")
 for filename in os.listdir(path_to_folder+"/logs"):
     file_path = os.path.join(path_to_folder+"/logs", filename)
@@ -84,6 +84,8 @@ for filename in os.listdir(path_to_folder+"/logs"):
                     try :
                         response = client.index(index=index_name, id=log_id, body=record)
                     except Exception as e: 
-                        print("Some parsing exception that we can ignore... " + str(e))
-            print("File " + file_path + " parsed.")
-print("Done, you can now visit http://127.0.0.1:5601/")
+                        print("\nSome parsing exception that we can ignore... " + str(e))
+    i = i + 1
+    if i % 500 == 0 :
+        print("\nStill working...")
+print("\n\nDone, you can now visit http://127.0.0.1:5601/")
