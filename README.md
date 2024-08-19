@@ -24,31 +24,7 @@ It is made for linux (created on Ubuntu), **it shall not work on Windows**.
 
 ### Tree
 
-It should be looking like :
-
-    .
-    ├── directory-structure.md
-    ├── docker-compose.yaml
-    ├── HeartBreakerDenouement
-    │   ├── AWS
-    │   │   ├── af-south-1
-    │   │   │   └── 2024
-    │   │   │       └── 03
-    │   │   │           ├── 12
-    │   │   │           ├── 13
-    │   │   │           └── 14
-    │   │   ├── ap-northeast-1
-    │   │   │   └── 2024
-    │   │   │       └── 03
-    │   │   │           ├── 12
-    │   │   │           │   ├── 949622803460_CloudTrail_ap-northeast-.json.gz
-    │   │   │           │   └── 949622803460_CloudTrail_ap-northeast-1_20240312T0035Z_A7YnwTNFdiLRloJ0.json.gz
-    │   └── [... Many more files and folders ...]
-        └── uac-uswebapp00-linux-20240313145552.tar.gz   
-    ├── Heartbreaker-Denouement.py
-    ├── HeartBreakerDenouement.zip
-    ├── kibana.yml
-    └── README.md
+![Directory tree](tree.png)
 
 ### Launch
 
