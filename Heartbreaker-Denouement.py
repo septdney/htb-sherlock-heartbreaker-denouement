@@ -53,7 +53,7 @@ print("OK.")
 print("\nCreating index heartbreakerdenouement.")
 index_name="heartbreakerdenouement"
 try:
-    client.indices.create(index="heartbreakerdenouement")
+    client.indices.create(index=index_name)
 except:
     print("Index already exists.")
 print("OK.")
